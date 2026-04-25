@@ -1,0 +1,61 @@
+- main [ref=e3]:
+  - complementary "Pen navigation" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img "CFPen logo" [ref=e7]
+        - generic [ref=e8]:
+          - generic [ref=e9]: CFPen
+          - generic [ref=e10]: Personal pens
+      - generic [ref=e11]:
+        - button "Collapse sidebar" [expanded] [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - button "New pen" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - img [ref=e25]
+        - textbox "Pen title" [ref=e26]: Untitled Pen
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - img [ref=e29]
+          - generic [ref=e31]: saved
+        - button "Duplicate" [ref=e32] [cursor=pointer]:
+          - img [ref=e33]
+          - text: Duplicate
+        - button "Share" [disabled] [ref=e36]:
+          - img [ref=e37]
+          - text: Share
+        - link "View" [ref=e43] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e44]
+          - text: View
+        - button "Delete pen" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]: HTML
+          - generic [ref=e57]: Loading...
+        - generic [ref=e58]:
+          - generic [ref=e59]: CSS
+          - generic [ref=e61]: Loading...
+        - generic [ref=e62]:
+          - generic [ref=e63]: TS
+          - generic [ref=e65]: Loading...
+        - generic [ref=e66]:
+          - generic [ref=e67]: Preview
+          - iframe [ref=e68]:
+            - main [ref=f7e2]:
+              - paragraph [ref=f7e3]: CFPen
+              - heading "Shape ideas in code." [level=1] [ref=f7e4]
+              - button "Run moment" [ref=f7e5]
+      - complementary [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: Assets
+            - strong [ref=e73]: "0"
+          - generic "Upload asset" [ref=e74] [cursor=pointer]:
+            - img [ref=e75]
+        - img "CFPen interface inspiration" [ref=e80]
+        - generic [ref=e82]: No uploaded assets

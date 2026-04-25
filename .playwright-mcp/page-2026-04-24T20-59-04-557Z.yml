@@ -1,0 +1,134 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - complementary "Pen navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img "CFPen logo" [ref=e7]
+          - generic [ref=e8]:
+            - generic [ref=e9]: CFPen
+            - generic [ref=e10]: Personal pens
+        - generic [ref=e11]:
+          - button "Collapse sidebar" [expanded] [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+          - button "New pen" [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+      - button "Simple Button 25/04/2026" [ref=e21] [cursor=pointer]:
+        - generic [ref=e22]: Simple Button
+        - time [ref=e23]: 25/04/2026
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - img [ref=e28]
+          - textbox "Pen title" [ref=e29]: Simple Button
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img [ref=e32]
+            - generic [ref=e34]: saved
+          - button "Duplicate" [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+            - text: Duplicate
+          - button "Share" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+            - text: Share
+          - link "View" [ref=e46] [cursor=pointer]:
+            - /url: http://127.0.0.1:5174/p/2d846e0ac10098de3a3bd04c
+            - img [ref=e47]
+            - text: View
+          - button "Delete pen" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: HTML
+            - code [ref=e61]:
+              - generic [ref=e62]:
+                - textbox "Editor content" [ref=e63]
+                - textbox [ref=e64]
+                - generic [ref=e66]:
+                  - generic [ref=e69]: "1"
+                  - generic [ref=e71]: "2"
+                  - generic [ref=e73]: "3"
+                  - generic [ref=e77]: "4"
+                - generic [ref=e90]:
+                  - generic [ref=e92]: <main>
+                  - generic [ref=e94]: <h1>Hello CFPen</h1>
+                  - generic [ref=e96]: <button
+                  - generic [ref=e98]: id="action">Click me</
+                  - generic [ref=e100]: button>
+                  - generic [ref=e102]: </main>
+          - generic [ref=e104]:
+            - generic [ref=e105]: CSS
+            - code [ref=e108]:
+              - generic [ref=e109]:
+                - textbox "Editor content" [ref=e110]
+                - textbox [ref=e111]
+                - generic [ref=e113]:
+                  - generic [ref=e116]: "1"
+                  - generic [ref=e118]: "2"
+                  - generic [ref=e121]: "3"
+                  - generic [ref=e123]: "4"
+                  - generic [ref=e125]: "5"
+                  - generic [ref=e127]: "6"
+                  - generic [ref=e129]: "7"
+                  - generic [ref=e131]: "8"
+                  - generic [ref=e133]: "9"
+                  - generic [ref=e135]: "10"
+                  - generic [ref=e137]: "11"
+                  - generic [ref=e139]: "12"
+                  - generic [ref=e141]: "13"
+                  - generic [ref=e143]: "14"
+                  - generic [ref=e145]: "15"
+                  - generic [ref=e147]: "16"
+                - generic [ref=e179]:
+                  - generic [ref=e181]: "body {"
+                  - generic [ref=e183]: "font-family:"
+                  - generic [ref=e185]: system-ui, sans-serif;
+                  - generic [ref=e187]: "margin: 0;"
+                  - generic [ref=e189]: "min-height: 100vh;"
+                  - generic [ref=e191]: "display: grid;"
+                  - generic [ref=e193]: "place-items: center;"
+                  - generic [ref=e195]: "background: #f7f3e8;"
+                  - generic [ref=e197]: "color: #1d2528;"
+                  - generic [ref=e199]: "}"
+                  - generic [ref=e202]: "button {"
+                  - generic [ref=e204]: "border: 0;"
+                  - generic [ref=e206]: "padding: 0.7rem 1rem;"
+                  - generic [ref=e208]: "background: #136f63;"
+                  - generic [ref=e210]: "color: white;"
+                  - generic [ref=e212]: "}"
+          - generic [ref=e214]:
+            - generic [ref=e215]: TS
+            - code [ref=e218]:
+              - generic [ref=e219]:
+                - textbox "Editor content" [ref=e220]
+                - textbox [ref=e221]
+                - generic [ref=e223]:
+                  - generic [ref=e226]: "1"
+                  - generic [ref=e234]: "2"
+                  - generic [ref=e236]: "3"
+                - generic [ref=e249]:
+                  - generic [ref=e251]: document.querySelector
+                  - generic [ref=e253]: ('#action')?.
+                  - generic [ref=e255]: addEventListener
+                  - generic [ref=e257]: "('click', () => {"
+                  - generic [ref=e259]: alert('It works');
+                  - generic [ref=e261]: "});"
+          - generic [ref=e263]:
+            - generic [ref=e264]: Preview
+            - iframe [ref=e265]:
+              - generic [active] [ref=f14e1]: Cannot read properties of undefined (reading 'toUrl')
+        - complementary "Assets" [ref=e266]:
+          - generic [ref=e267]:
+            - generic [ref=e268]:
+              - generic [ref=e269]: Assets
+              - strong [ref=e270]: "0"
+            - generic [ref=e271]:
+              - button "Collapse assets" [expanded] [ref=e272] [cursor=pointer]:
+                - img [ref=e273]
+              - generic "Upload asset" [ref=e276] [cursor=pointer]:
+                - img [ref=e277]
+          - img "CFPen interface inspiration" [ref=e282]
+          - generic [ref=e284]: No uploaded assets
+  - generic [ref=e285]:
+    - alert
+    - alert

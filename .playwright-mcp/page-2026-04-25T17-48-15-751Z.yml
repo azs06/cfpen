@@ -1,0 +1,171 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - complementary "Pen navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img "CFPen logo" [ref=e7]
+          - generic [ref=e8]:
+            - generic [ref=e9]: CFPen
+            - generic [ref=e10]: Personal pens
+        - button "Collapse sidebar" [expanded] [ref=e11] [cursor=pointer]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - button "New Pen" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+          - generic [ref=e20]: New Pen
+          - img [ref=e21]
+        - generic [ref=e23]:
+          - img [ref=e24]
+          - textbox [ref=e27]:
+            - /placeholder: Search pens...
+        - generic [ref=e28]: Pens
+        - button "Simple Button 2h ago" [ref=e137] [cursor=pointer]:
+          - img [ref=e139]
+          - generic [ref=e143]:
+            - strong [ref=e144]: Simple Button
+            - time [ref=e145]: 2h ago
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e33]:
+            - textbox "Pen title" [ref=e34]: Simple Button
+            - textbox "Pen description" [ref=e35]: No description
+        - generic "Preview size" [ref=e36]:
+          - button "1440px" [ref=e37] [cursor=pointer]:
+            - img [ref=e38]
+          - button "1200px" [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+          - button "768px" [active] [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+          - button "390px" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - generic [ref=e49]: 768px
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - img [ref=e52]
+            - generic [ref=e54]: saved
+          - button "Pen actions" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]: HT
+            - generic [ref=e66]: HTML
+            - img [ref=e67]
+          - code [ref=e148]:
+            - generic [ref=e149]:
+              - textbox "Editor content" [ref=e150]
+              - textbox [ref=e151]
+              - generic [ref=e153]:
+                - generic [ref=e154]:
+                  - generic [ref=e156] [cursor=pointer]: 
+                  - generic [ref=e157]: "1"
+                - generic [ref=e159]: "2"
+                - generic [ref=e161]: "3"
+                - generic [ref=e164]: "4"
+              - generic [ref=e175]:
+                - generic [ref=e177]: <main>
+                - generic [ref=e179]: <h1>Hello CFPen</h1>
+                - generic [ref=e181]: <button id="action">Click
+                - generic [ref=e183]: me</button>
+                - generic [ref=e185]: </main>
+          - generic [ref=e72]:
+            - generic [ref=e73]: Ln 4, Col 1
+            - generic [ref=e74]: "Spaces: 2"
+            - generic [ref=e75]: HTML
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: CS
+            - generic [ref=e79]: CSS
+            - img [ref=e80]
+          - code [ref=e188]:
+            - generic [ref=e189]:
+              - textbox "Editor content" [ref=e190]
+              - textbox [ref=e191]
+              - generic [ref=e193]:
+                - generic [ref=e194]:
+                  - generic [ref=e196] [cursor=pointer]: 
+                  - generic [ref=e197]: "1"
+                - generic [ref=e199]: "2"
+                - generic [ref=e202]: "3"
+                - generic [ref=e204]: "4"
+                - generic [ref=e206]: "5"
+                - generic [ref=e208]: "6"
+                - generic [ref=e210]: "7"
+                - generic [ref=e212]: "8"
+                - generic [ref=e214]: "9"
+                - generic [ref=e216]: "10"
+              - generic [ref=e238]:
+                - generic [ref=e240]: "body {"
+                - generic [ref=e242]: "font-family: system-ui,"
+                - generic [ref=e244]: sans-serif;
+                - generic [ref=e246]: "margin: 0;"
+                - generic [ref=e248]: "min-height: 100vh;"
+                - generic [ref=e250]: "display: grid;"
+                - generic [ref=e252]: "place-items: center;"
+                - generic [ref=e254]:
+                  - text: "background:"
+                  - text: "#f7f3e8;"
+                - generic [ref=e257]:
+                  - text: "color:"
+                  - text: "#1d2528;"
+                - generic [ref=e260]: "}"
+          - generic [ref=e85]:
+            - generic [ref=e86]: Ln 16, Col 1
+            - generic [ref=e87]: "Spaces: 2"
+            - generic [ref=e88]: CSS
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: JS
+            - generic [ref=e92]:
+              - combobox "Script language" [ref=e93] [cursor=pointer]:
+                - option "JS" [selected]
+                - option "TS"
+              - img [ref=e94]
+            - img [ref=e96]
+          - code [ref=e264]:
+            - generic [ref=e265]:
+              - textbox "Editor content" [ref=e266]
+              - textbox [ref=e267]
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - generic [ref=e272] [cursor=pointer]: 
+                  - generic [ref=e273]: "1"
+                - generic [ref=e281]: "2"
+                - generic [ref=e283]: "3"
+                - generic [ref=e285]: "4"
+              - generic [ref=e300]:
+                - generic [ref=e302]: document.querySelector
+                - generic [ref=e304]: ('#action')?.
+                - generic [ref=e306]: addEventListener('click',
+                - generic [ref=e308]: "() => {"
+                - generic [ref=e310]: alert('It works');
+                - generic [ref=e312]: console.log('hello')
+                - generic [ref=e314]: "});"
+          - generic [ref=e101]:
+            - generic [ref=e102]: Ln 4, Col 1
+            - generic [ref=e103]: "Spaces: 2"
+            - generic [ref=e104]: JavaScript
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: Preview
+            - button "Refresh preview" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - link "Open shared view" [ref=e114] [cursor=pointer]:
+              - /url: http://127.0.0.1:5173/p/2d846e0ac10098de3a3bd04c
+              - img [ref=e115]
+          - generic [ref=e121]:
+            - strong [ref=e318]: 768 x 1024 · 54%
+            - iframe [ref=e128]:
+              - main [ref=f11e2]:
+                - heading "Hello CFPen" [level=1] [ref=f11e3]
+                - button "Click me" [ref=f11e4]
+      - generic [ref=e129]:
+        - button "Console 0" [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+          - text: Console 0
+        - generic [ref=e135]: Last saved 2h ago
+  - generic [ref=e320]:
+    - alert
+    - alert

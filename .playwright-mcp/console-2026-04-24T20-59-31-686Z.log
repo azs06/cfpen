@@ -1,0 +1,3 @@
+[   30168ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5174/src/client/lib/monacoTypeScript.ts?t=1777064401822:0
+[   30169ms] [ERROR] [vite] Failed to reload /src/client/components/SharedPage.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5174/@vite/client:881
+[   30169ms] [ERROR] [vite] Failed to reload /src/client/components/EditorPage.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5174/@vite/client:881

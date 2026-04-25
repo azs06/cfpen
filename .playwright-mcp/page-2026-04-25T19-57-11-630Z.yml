@@ -1,0 +1,181 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - complementary "Pen navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img "CFPen logo" [ref=e7]
+          - generic [ref=e8]:
+            - generic [ref=e9]: CFPen
+            - generic [ref=e10]: Personal pens
+        - button "Collapse sidebar" [expanded] [ref=e11] [cursor=pointer]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - button "New Pen" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+          - generic [ref=e20]: New Pen
+          - img [ref=e21]
+        - generic [ref=e23]:
+          - img [ref=e24]
+          - textbox [ref=e27]:
+            - /placeholder: Search pens...
+        - generic [ref=e28]: Pens
+        - button "Simple Button 5h ago" [ref=e117] [cursor=pointer]:
+          - img [ref=e119]
+          - generic [ref=e123]:
+            - strong [ref=e124]: Simple Button
+            - time [ref=e125]: 5h ago
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e33]:
+            - textbox "Pen title" [ref=e34]: Simple Button
+            - textbox "Pen description" [ref=e35]: No description
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - img [ref=e38]
+            - generic [ref=e40]: saved
+          - button "Pen actions" [ref=e42] [cursor=pointer]:
+            - img [ref=e43]
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: HT
+            - generic [ref=e52]: HTML
+            - img [ref=e53]
+          - code [ref=e128]:
+            - generic [ref=e129]:
+              - textbox "Editor content" [ref=e130]
+              - textbox [ref=e131]
+              - generic [ref=e133]:
+                - generic [ref=e134]:
+                  - generic [ref=e135] [cursor=pointer]: 
+                  - generic [ref=e136]: "1"
+                - generic [ref=e138]: "2"
+                - generic [ref=e140]: "3"
+                - generic [ref=e143]: "4"
+              - generic [ref=e155]:
+                - generic [ref=e157]: <main>
+                - generic [ref=e159]: <h1>Hello CFPen</h1>
+                - generic [ref=e161]: <button id="action">Click
+                - generic [ref=e163]: </main>
+                - generic [ref=e165]: me</button>
+          - generic [ref=e58]:
+            - generic [ref=e59]: Ln 4, Col 1
+            - generic [ref=e60]: "Spaces: 2"
+            - generic [ref=e61]: HTML
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: CS
+            - generic [ref=e65]: CSS
+            - img [ref=e66]
+          - code [ref=e168]:
+            - generic [ref=e169]:
+              - textbox "Editor content" [ref=e170]
+              - textbox [ref=e171]
+              - generic [ref=e173]:
+                - generic [ref=e174]:
+                  - generic [ref=e175] [cursor=pointer]: 
+                  - generic [ref=e176]: "1"
+                - generic [ref=e178]: "2"
+                - generic [ref=e180]: "3"
+                - generic [ref=e182]: "4"
+                - generic [ref=e184]: "5"
+                - generic [ref=e186]: "6"
+                - generic [ref=e188]: "7"
+                - generic [ref=e190]: "8"
+                - generic [ref=e192]: "9"
+                - generic [ref=e195]: "10"
+              - generic [ref=e216]:
+                - generic [ref=e218]: "body {"
+                - generic [ref=e220]: "font-family: system-ui,"
+                - generic [ref=e222]: "margin: 0;"
+                - generic [ref=e224]: "min-height: 100vh;"
+                - generic [ref=e226]: "display: grid;"
+                - generic [ref=e228]: "place-items: center;"
+                - generic [ref=e230]:
+                  - text: "background:"
+                  - text: "#f7f3e8;"
+                - generic [ref=e233]:
+                  - text: "color:"
+                  - text: "#1d2528;"
+                - generic [ref=e236]: "}"
+                - generic [ref=e238]: sans-serif;
+          - generic [ref=e71]:
+            - generic [ref=e72]: Ln 16, Col 1
+            - generic [ref=e73]: "Spaces: 2"
+            - generic [ref=e74]: CSS
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]: JS
+            - generic [ref=e78]:
+              - combobox "Script language" [ref=e79] [cursor=pointer]:
+                - option "JS" [selected]
+                - option "TS"
+              - img [ref=e80]
+            - img [ref=e82]
+          - code [ref=e242]:
+            - generic [ref=e243]:
+              - textbox "Editor content" [ref=e244]
+              - textbox [ref=e245]
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - generic [ref=e249] [cursor=pointer]: 
+                  - generic [ref=e250]: "1"
+                - generic [ref=e253]: "2"
+                - generic [ref=e255]: "3"
+                - generic [ref=e260]: "4"
+              - generic [ref=e272]:
+                - generic [ref=e274]: document.querySelector
+                - generic [ref=e276]: ('#action')?.
+                - generic [ref=e278]: alert('It works');
+                - generic [ref=e280]: console.log('hello')
+                - generic [ref=e282]: addEventListener('click',
+                - generic [ref=e284]: "() => {"
+                - generic [ref=e286]: "});"
+          - generic [ref=e87]:
+            - generic [ref=e88]: Ln 4, Col 1
+            - generic [ref=e89]: "Spaces: 2"
+            - generic [ref=e90]: JavaScript
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Preview
+            - button "Refresh preview" [ref=e94] [cursor=pointer]:
+              - img [ref=e95]
+            - button "Open fullscreen preview" [ref=e100] [cursor=pointer]:
+              - img [ref=e101]
+          - iframe [ref=e108]:
+            - main [ref=f16e2]:
+              - heading "Hello CFPen" [level=1] [ref=f16e3]
+              - button "Click me" [ref=f16e4]
+      - dialog "Preview" [ref=e288]:
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - heading "Preview" [level=2] [ref=e291]
+            - generic [ref=e292]: 1440px
+          - generic "Preview size" [ref=e293]:
+            - button "1440px" [active] [ref=e294] [cursor=pointer]:
+              - img [ref=e295]
+            - button "1200px" [ref=e297] [cursor=pointer]:
+              - img [ref=e298]
+            - button "768px" [ref=e300] [cursor=pointer]:
+              - img [ref=e301]
+            - button "390px" [ref=e303] [cursor=pointer]:
+              - img [ref=e304]
+            - generic [ref=e306]: 1440px
+          - button "Close fullscreen preview" [ref=e307] [cursor=pointer]:
+            - img [ref=e308]
+        - generic [ref=e315]:
+          - strong [ref=e320]: 1440 x 900 · 51%
+          - iframe [ref=e322]:
+            - main [ref=f18e2]:
+              - heading "Hello CFPen" [level=1] [ref=f18e3]
+              - button "Click me" [ref=f18e4]
+      - generic [ref=e109]:
+        - button "Console 0" [ref=e111] [cursor=pointer]:
+          - img [ref=e112]
+          - text: Console 0
+        - generic [ref=e115]: Last saved 5h ago
+  - generic [ref=e314]:
+    - alert
+    - alert

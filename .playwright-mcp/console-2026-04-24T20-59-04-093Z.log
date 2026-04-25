@@ -1,0 +1,27 @@
+[     160ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5174/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:20102
+[     208ms] [WARNING] Could not create web worker(s). Falling back to loading web worker code in main thread, which might cause UI freezes. Please see https://github.com/microsoft/monaco-editor#faq @ http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:40900
+[     209ms] [WARNING] You must define a function MonacoEnvironment.getWorkerUrl or MonacoEnvironment.getWorker @ http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:40902
+[     270ms] TypeError: Cannot read properties of undefined (reading 'toUrl')
+    at _FileAccessImpl.toUri (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:9892:40)
+    at _FileAccessImpl.asBrowserUri (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:9848:26)
+    at http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:45964:32
+    at new Promise (<anonymous>)
+    at EditorSimpleWorker.$loadForeignModule (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:45956:12)
+    at http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:83818:22
+    at async http://127.0.0.1:5174/node_modules/.vite/deps/tsMode-DZUZOFXX.js?v=94da8af1:81:16
+[     270ms] TypeError: Cannot read properties of undefined (reading 'toUrl')
+    at _FileAccessImpl.toUri (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:9892:40)
+    at _FileAccessImpl.asBrowserUri (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:9848:26)
+    at http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:45964:32
+    at new Promise (<anonymous>)
+    at EditorSimpleWorker.$loadForeignModule (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:45956:12)
+    at http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:83818:22
+    at async http://127.0.0.1:5174/node_modules/.vite/deps/tsMode-DZUZOFXX.js?v=94da8af1:81:16
+[     361ms] TypeError: Cannot read properties of undefined (reading 'toUrl')
+    at _FileAccessImpl.toUri (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:9892:40)
+    at _FileAccessImpl.asBrowserUri (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:9848:26)
+    at http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:45964:32
+    at new Promise (<anonymous>)
+    at EditorSimpleWorker.$loadForeignModule (http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:45956:12)
+    at http://127.0.0.1:5174/node_modules/.vite/deps/chunk-ZQ4DFUYQ.js?v=94da8af1:83818:22
+    at async http://127.0.0.1:5174/node_modules/.vite/deps/tsMode-DZUZOFXX.js?v=94da8af1:81:16

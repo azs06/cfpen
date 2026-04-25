@@ -1,0 +1,28 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]: CFPen
+        - heading "Simple Button" [level=1] [ref=e9]
+    - generic "Preview size" [ref=e10]:
+      - button "1440px" [ref=e11] [cursor=pointer]:
+        - img [ref=e12]
+      - button "1200px" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+      - button "768px" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "390px" [ref=e20] [cursor=pointer]:
+        - img [ref=e21]
+      - generic [ref=e23]: Auto
+    - generic [ref=e24]:
+      - button "Copy link" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+        - text: Copy link
+      - button "Fork" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+        - text: Fork
+  - iframe [ref=e38]:
+    - main [ref=f20e2]:
+      - heading "Hello CFPen" [level=1] [ref=f20e3]
+      - button "Click me" [ref=f20e4]

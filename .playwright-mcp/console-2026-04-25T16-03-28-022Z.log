@@ -1,0 +1,18 @@
+[     186ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:20102
+[     256ms] [LOG] CFPen preview ready @ about:srcdoc:86
+[ 3336439ms] ReferenceError: compileScript is not defined
+    at http://127.0.0.1:5173/src/client/components/EditorPage.tsx?t=1777136344184:122:5
+    at Object.react_stack_bottom_frame (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:18567:20)
+    at runWithFiberInDEV (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:997:72)
+    at commitHookEffectListMount (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:9411:163)
+    at commitHookPassiveMountEffects (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:9465:60)
+    at commitPassiveMountOnFiber (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:11040:29)
+    at recursivelyTraversePassiveMountEffects (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:11010:13)
+    at commitPassiveMountOnFiber (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:11033:13)
+    at recursivelyTraversePassiveMountEffects (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:11010:13)
+    at commitPassiveMountOnFiber (http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:11201:13)
+[ 3336419ms] [WARNING] %s
+
+%s
+ An error occurred in the <EditorPage> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:6965

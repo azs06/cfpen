@@ -1,0 +1,178 @@
+- main [ref=e3]:
+  - complementary "Pen navigation" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img "CFPen logo" [ref=e7]
+        - generic [ref=e8]:
+          - generic [ref=e9]: CFPen
+          - generic [ref=e10]: Personal pens
+      - button "Collapse sidebar" [expanded] [ref=e11] [cursor=pointer]:
+        - img [ref=e12]
+    - generic [ref=e15]:
+      - button "New Pen" [ref=e16] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e20]: New Pen
+        - img [ref=e21]
+      - generic [ref=e23]:
+        - img [ref=e24]
+        - textbox [ref=e27]:
+          - /placeholder: Search pens...
+      - generic [ref=e28]: Pens
+      - generic [ref=e29]:
+        - generic [ref=e30]: Collections
+        - button "+" [ref=e31] [cursor=pointer]
+      - generic [ref=e32]:
+        - button "UI Experiments 7 pens" [ref=e33] [cursor=pointer]:
+          - img [ref=e34]
+          - generic [ref=e36]:
+            - strong [ref=e37]: UI Experiments
+            - generic [ref=e38]: 7 pens
+        - button "Animations 5 pens" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]
+          - generic [ref=e42]:
+            - strong [ref=e43]: Animations
+            - generic [ref=e44]: 5 pens
+        - button "Layouts 4 pens" [ref=e45] [cursor=pointer]:
+          - img [ref=e46]
+          - generic [ref=e48]:
+            - strong [ref=e49]: Layouts
+            - generic [ref=e50]: 4 pens
+        - button "Components 6 pens" [ref=e51] [cursor=pointer]:
+          - img [ref=e52]
+          - generic [ref=e54]:
+            - strong [ref=e55]: Components
+            - generic [ref=e56]: 6 pens
+    - generic [ref=e57]:
+      - button "Settings" [ref=e58] [cursor=pointer]:
+        - img [ref=e59]
+      - button "Help" [ref=e62] [cursor=pointer]:
+        - img [ref=e63]
+      - button "Notifications" [ref=e66] [cursor=pointer]:
+        - img [ref=e67]
+  - generic [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - img [ref=e73]
+        - generic [ref=e74]:
+          - textbox "Pen title" [ref=e75]: Untitled Pen
+          - textbox "Pen description" [ref=e76]: No description
+      - generic "Preview size" [ref=e77]:
+        - button "100%" [ref=e78] [cursor=pointer]:
+          - img [ref=e79]
+        - button "1200px" [ref=e81] [cursor=pointer]:
+          - img [ref=e82]
+        - button "768px" [ref=e84] [cursor=pointer]:
+          - img [ref=e85]
+        - button "390px" [ref=e87] [cursor=pointer]:
+          - img [ref=e88]
+        - generic [ref=e90]: 100%
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - img [ref=e93]
+          - generic [ref=e95]: saved
+        - button "Duplicate" [ref=e96] [cursor=pointer]:
+          - img [ref=e97]
+          - text: Duplicate
+        - button "Share" [disabled] [ref=e100]:
+          - img [ref=e101]
+          - text: Share
+        - link "View" [ref=e107] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e108]
+          - text: View
+        - button "Delete pen" [ref=e112] [cursor=pointer]:
+          - img [ref=e113]
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: HT
+            - generic [ref=e121]: HTML
+            - img [ref=e122]
+            - img [ref=e124]
+            - img [ref=e127]
+          - generic [ref=e132]: Loading...
+          - generic [ref=e133]:
+            - generic [ref=e134]: Ln 6, Col 1
+            - generic [ref=e135]: "Spaces: 2"
+            - generic [ref=e136]: HTML
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]: CS
+            - generic [ref=e140]: CSS
+            - img [ref=e141]
+            - img [ref=e143]
+            - img [ref=e146]
+          - generic [ref=e151]: Loading...
+          - generic [ref=e152]:
+            - generic [ref=e153]: Ln 44, Col 1
+            - generic [ref=e154]: "Spaces: 2"
+            - generic [ref=e155]: CSS
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]: TS
+            - generic [ref=e159]: TS
+            - img [ref=e160]
+            - img [ref=e162]
+            - img [ref=e165]
+          - generic [ref=e170]: Loading...
+          - generic [ref=e171]:
+            - generic [ref=e172]: Ln 5, Col 1
+            - generic [ref=e173]: "Spaces: 2"
+            - generic [ref=e174]: TypeScript
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]: Preview
+            - button "Refresh preview" [ref=e178] [cursor=pointer]:
+              - img [ref=e179]
+            - link "Open shared view" [ref=e184] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e185]
+            - button "Layout" [ref=e189] [cursor=pointer]:
+              - img [ref=e190]
+            - button "More" [ref=e192] [cursor=pointer]:
+              - img [ref=e193]
+          - iframe [ref=e199]:
+            - main [ref=f18e2]:
+              - heading "Hello CFPen" [level=1] [ref=f18e3]
+              - button "Click me" [ref=f18e4]
+      - complementary "Assets" [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - generic [ref=e203]: Assets
+            - strong [ref=e204]: "0"
+          - generic [ref=e205]:
+            - button "Collapse assets" [expanded] [ref=e206] [cursor=pointer]:
+              - img [ref=e207]
+            - generic "Upload asset" [ref=e210] [cursor=pointer]:
+              - img [ref=e211]
+        - generic [ref=e215]:
+          - img [ref=e216]
+          - textbox [ref=e219]:
+            - /placeholder: Search assets...
+        - combobox [ref=e220]:
+          - option "All Assets" [selected]
+          - option "Images"
+          - option "SVG"
+          - option "Other"
+        - generic [ref=e222]: No matching assets
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - button "Console 0" [ref=e225] [cursor=pointer]:
+          - img [ref=e226]
+          - text: Console 0
+        - button "Assets 0" [ref=e228] [cursor=pointer]:
+          - img [ref=e229]
+          - text: Assets 0
+        - button "Comments" [ref=e233] [cursor=pointer]:
+          - img [ref=e234]
+          - text: Comments
+        - button "Shortcuts" [ref=e236] [cursor=pointer]:
+          - img [ref=e237]
+          - text: Shortcuts
+      - generic [ref=e240]:
+        - generic [ref=e241]: Not saved yet
+        - button "Delete Pen" [ref=e242] [cursor=pointer]
+      - generic [ref=e245]:
+        - generic [ref=e246]: No console output
+        - button "Clear" [ref=e247] [cursor=pointer]

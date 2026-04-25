@@ -1,0 +1,60 @@
+- main [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img "CFPen logo" [ref=e7]
+        - generic [ref=e8]:
+          - generic [ref=e9]: CFPen
+          - generic [ref=e10]: Personal pens
+      - button "New pen" [ref=e11] [cursor=pointer]:
+        - img [ref=e12]
+    - button "Simple Button 25/04/2026" [ref=e16] [cursor=pointer]:
+      - generic [ref=e17]: Simple Button
+      - time [ref=e18]: 25/04/2026
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - img [ref=e23]
+        - textbox "Pen title" [ref=e24]: Untitled Pen
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - img [ref=e27]
+          - generic [ref=e29]: saved
+        - button "Duplicate" [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+          - text: Duplicate
+        - button "Share" [disabled] [ref=e34]:
+          - img [ref=e35]
+          - text: Share
+        - link "View" [ref=e41] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e42]
+          - text: View
+        - button "Delete pen" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: HTML
+          - generic [ref=e55]: Loading...
+        - generic [ref=e56]:
+          - generic [ref=e57]: CSS
+          - generic [ref=e59]: Loading...
+        - generic [ref=e60]:
+          - generic [ref=e61]: TS
+          - generic [ref=e63]: Loading...
+        - generic [ref=e64]:
+          - generic [ref=e65]: Preview
+          - iframe [ref=e66]:
+            - main [ref=f4e2]:
+              - heading "Hello CFPen" [level=1] [ref=f4e3]
+              - button "Click me" [ref=f4e4]
+      - complementary [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: Assets
+            - strong [ref=e71]: "0"
+          - generic "Upload asset" [ref=e72] [cursor=pointer]:
+            - img [ref=e73]
+        - img "CFPen interface inspiration" [ref=e78]
+        - generic [ref=e80]: No uploaded assets

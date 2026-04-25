@@ -1,0 +1,86 @@
+- main [ref=e3]:
+  - complementary "Pen navigation" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img "CFPen logo" [ref=e7]
+        - generic [ref=e8]:
+          - generic [ref=e9]: CFPen
+          - generic [ref=e10]: Personal pens
+      - button "Collapse sidebar" [expanded] [ref=e11] [cursor=pointer]:
+        - img [ref=e12]
+    - generic [ref=e15]:
+      - button "New Pen" [ref=e16] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e20]: New Pen
+        - img [ref=e21]
+      - generic [ref=e23]:
+        - img [ref=e24]
+        - textbox [ref=e27]:
+          - /placeholder: Search pens...
+      - generic [ref=e28]: Pens
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - img [ref=e32]
+        - generic [ref=e33]:
+          - textbox "Pen title" [ref=e34]: Untitled Pen
+          - textbox "Pen description" [ref=e35]: No description
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - img [ref=e38]
+          - generic [ref=e40]: saved
+        - button "Pen actions" [ref=e42] [cursor=pointer]:
+          - img [ref=e43]
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: HT
+          - generic [ref=e52]: HTML
+          - img [ref=e53]
+        - generic [ref=e57]: Loading...
+        - generic [ref=e58]:
+          - generic [ref=e59]: Ln 6, Col 1
+          - generic [ref=e60]: "Spaces: 2"
+          - generic [ref=e61]: HTML
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]: CS
+          - generic [ref=e65]: CSS
+          - img [ref=e66]
+        - generic [ref=e70]: Loading...
+        - generic [ref=e71]:
+          - generic [ref=e72]: Ln 44, Col 1
+          - generic [ref=e73]: "Spaces: 2"
+          - generic [ref=e74]: CSS
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: JS
+          - generic [ref=e78]:
+            - combobox "Script language" [ref=e79] [cursor=pointer]:
+              - option "JS" [selected]
+              - option "TS"
+            - img [ref=e80]
+          - img [ref=e82]
+        - generic [ref=e86]: Loading...
+        - generic [ref=e87]:
+          - generic [ref=e88]: Ln 5, Col 1
+          - generic [ref=e89]: "Spaces: 2"
+          - generic [ref=e90]: JavaScript
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: Preview
+          - button "Refresh preview" [ref=e94] [cursor=pointer]:
+            - img [ref=e95]
+          - button "Open fullscreen preview" [ref=e100] [cursor=pointer]:
+            - img [ref=e101]
+        - iframe [ref=e108]:
+          - main [ref=f16e2]:
+            - text: "2026"
+            - heading "Design with Code." [level=1] [ref=f16e3]
+            - paragraph [ref=f16e4]: A modern, lightweight editor for building beautiful web experiences.
+            - button "Explore Features" [ref=f16e5]
+    - generic [ref=e109]:
+      - button "Console 0" [ref=e111] [cursor=pointer]:
+        - img [ref=e112]
+        - text: Console 0
+      - generic [ref=e115]: Not saved yet

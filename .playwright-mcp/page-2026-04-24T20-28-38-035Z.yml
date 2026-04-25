@@ -1,0 +1,55 @@
+- main [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img "CFPen logo" [ref=e7]
+        - generic [ref=e8]:
+          - generic [ref=e9]: CFPen
+          - generic [ref=e10]: Personal pens
+      - button "New pen" [ref=e11] [cursor=pointer]:
+        - img [ref=e12]
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - img [ref=e20]
+        - textbox "Pen title" [ref=e21]: Untitled Pen
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - img [ref=e24]
+          - generic [ref=e26]: saved
+        - button "Duplicate" [ref=e27] [cursor=pointer]:
+          - img [ref=e28]
+          - text: Duplicate
+        - button "Share" [disabled] [ref=e31]:
+          - img [ref=e32]
+          - text: Share
+        - link "View" [ref=e38] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e39]
+          - text: View
+        - button "Delete pen" [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: HTML
+          - generic [ref=e52]: Loading...
+        - generic [ref=e53]:
+          - generic [ref=e54]: CSS
+          - generic [ref=e56]: Loading...
+        - generic [ref=e57]:
+          - generic [ref=e58]: TS
+          - generic [ref=e60]: Loading...
+        - generic [ref=e61]:
+          - generic [ref=e62]: Preview
+          - iframe [ref=e63]:
+            
+      - complementary [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Assets
+            - strong [ref=e68]: "0"
+          - generic "Upload asset" [ref=e69] [cursor=pointer]:
+            - img [ref=e70]
+        - img "CFPen interface inspiration" [ref=e75]
+        - generic [ref=e77]: No uploaded assets

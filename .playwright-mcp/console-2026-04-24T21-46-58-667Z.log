@@ -1,0 +1,2 @@
+[     127ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5175/node_modules/.vite/deps/react-dom_client.js?v=94da8af1:20102
+[     417ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0

@@ -259,6 +259,11 @@ label:focus-visible {
   background: #171d24;
 }
 
+.workspace > .topbar { grid-row: 1; }
+.workspace > .error-banner { grid-row: 2; }
+.workspace > .surface-grid { grid-row: 3; }
+.workspace > .utility-bar { grid-row: 4; }
+
 .topbar {
   justify-content: space-between;
   gap: 18px;

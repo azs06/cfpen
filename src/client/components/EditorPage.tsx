@@ -705,7 +705,7 @@ export function EditorPage({ initialPenId }: { initialPenId: string | null }) {
               aria-expanded={consoleOpen}
             >
               <Terminal size={15} />
-              Console {consoleEntries.length}
+              Console
             </button>
           </div>
           <div className="utility-status">

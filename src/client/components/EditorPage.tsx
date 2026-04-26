@@ -2,6 +2,7 @@ import Editor from "@monaco-editor/react";
 import {
   Check,
   ChevronDown,
+  ChevronsLeft,
   Copy,
   ExternalLink,
   FilePlus2,
@@ -54,6 +55,8 @@ type PreviewMode = "desktop" | "laptop" | "tablet" | "mobile";
 type AssetFilter = "all" | "images" | "svg" | "other";
 type ConsoleLevel = "log" | "warn" | "error";
 type ScriptLanguage = "javascript" | "typescript";
+type PaneKey = "html" | "css" | "js";
+type CollapsedPanes = Record<PaneKey, boolean>;
 
 type ConsoleEntry = {
   id: string;
@@ -104,6 +107,93 @@ export function EditorPage({ initialPenId }: { initialPenId: string | null }) {
   const [consoleEntries, setConsoleEntries] = useState<ConsoleEntry[]>([]);
   const [consoleOpen, setConsoleOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [collapsedPanes, setCollapsedPanes] = useState<CollapsedPanes>({
+    html: false,
+    css: false,
+    js: false
+  });
+  const [paneRatios, setPaneRatios] = useState<Record<PaneKey, number>>({
+    html: 1,
+    css: 1,
+    js: 1
+  });
+  const togglePaneCollapsed = useCallback((pane: PaneKey) => {
+    setCollapsedPanes((previous) => ({ ...previous, [pane]: !previous[pane] }));
+  }, []);
+  const beginPaneResize = useCallback((event: React.MouseEvent, leftKey: PaneKey, rightKey: PaneKey) => {
+    event.preventDefault();
+    const startX = event.clientX;
+    const row = (event.currentTarget as HTMLElement).parentElement;
+    if (!row) return;
+    const leftEl = row.querySelector<HTMLElement>(`[data-pane-key="${leftKey}"]`);
+    const rightEl = row.querySelector<HTMLElement>(`[data-pane-key="${rightKey}"]`);
+    if (!leftEl || !rightEl) return;
+    const startLeftPx = leftEl.getBoundingClientRect().width;
+    const startRightPx = rightEl.getBoundingClientRect().width;
+    const totalPx = startLeftPx + startRightPx;
+    const minPx = 80;
+    const collapseThreshold = 50;
+    const expandThreshold = 60;
+
+    const wasLeftCollapsed = leftEl.classList.contains("collapsed");
+    const wasRightCollapsed = rightEl.classList.contains("collapsed");
+
+    const cleanup = () => {
+      document.removeEventListener("mousemove", onMove);
+      document.removeEventListener("mouseup", onUp);
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+
+    const onMove = (moveEvent: MouseEvent) => {
+      const deltaPx = moveEvent.clientX - startX;
+
+      if (wasLeftCollapsed && deltaPx > expandThreshold) {
+        setCollapsedPanes((previous) => ({ ...previous, [leftKey]: false }));
+        cleanup();
+        return;
+      }
+      if (wasRightCollapsed && deltaPx < -expandThreshold) {
+        setCollapsedPanes((previous) => ({ ...previous, [rightKey]: false }));
+        cleanup();
+        return;
+      }
+      if (wasLeftCollapsed || wasRightCollapsed) {
+        return;
+      }
+
+      const projectedLeftPx = startLeftPx + deltaPx;
+      const projectedRightPx = totalPx - projectedLeftPx;
+
+      if (projectedLeftPx < collapseThreshold) {
+        setCollapsedPanes((previous) => ({ ...previous, [leftKey]: true }));
+        cleanup();
+        return;
+      }
+      if (projectedRightPx < collapseThreshold) {
+        setCollapsedPanes((previous) => ({ ...previous, [rightKey]: true }));
+        cleanup();
+        return;
+      }
+
+      const newLeftPx = Math.max(minPx, Math.min(totalPx - minPx, projectedLeftPx));
+      setPaneRatios((previous) => {
+        const sum = previous[leftKey] + previous[rightKey];
+        const nextLeft = sum * (newLeftPx / totalPx);
+        const nextRight = sum - nextLeft;
+        return { ...previous, [leftKey]: nextLeft, [rightKey]: nextRight };
+      });
+    };
+
+    const onUp = () => {
+      cleanup();
+    };
+
+    document.addEventListener("mousemove", onMove);
+    document.addEventListener("mouseup", onUp);
+    document.body.style.cursor = "col-resize";
+    document.body.style.userSelect = "none";
+  }, []);
   const [assetModalOpen, setAssetModalOpen] = useState(false);
   const [fullscreenPreviewOpen, setFullscreenPreviewOpen] = useState(false);
   const [actionsOpen, setActionsOpen] = useState(false);
@@ -570,21 +660,71 @@ export function EditorPage({ initialPenId }: { initialPenId: string | null }) {
 
         <div className="surface-grid">
           <div className="editor-grid">
-            <CodePane title="HTML" tone="html" language="html" value={draft.html} onChange={(html) => patchDraft({ html })} />
-            <CodePane title="CSS" tone="css" language="css" value={draft.css} onChange={(css) => patchDraft({ css })} />
-            <CodePane
-              title={scriptLanguage === "typescript" ? "TS" : "JS"}
-              tone={scriptLanguage === "typescript" ? "ts" : "js"}
-              language={scriptLanguage}
-              footerLabel={scriptLanguage === "typescript" ? "TypeScript" : "JavaScript"}
-              value={draft.js}
-              onChange={(js) => patchDraft({ js })}
-              languageOptions={[
-                { label: "JS", value: "javascript" },
-                { label: "TS", value: "typescript" }
-              ]}
-              onLanguageChange={(language) => handleScriptLanguageChange(language as ScriptLanguage)}
-            />
+            <div className="editor-row">
+              <div
+                className={`code-pane-shell ${collapsedPanes.html ? "collapsed" : ""}`}
+                data-pane-key="html"
+                style={collapsedPanes.html ? undefined : { flex: `${paneRatios.html} 1 0` }}
+              >
+                <CodePane
+                  title="HTML"
+                  tone="html"
+                  language="html"
+                  value={draft.html}
+                  onChange={(html) => patchDraft({ html })}
+                  collapsed={collapsedPanes.html}
+                  onToggleCollapsed={() => togglePaneCollapsed("html")}
+                />
+              </div>
+              <div
+                className="pane-divider"
+                role="separator"
+                aria-orientation="vertical"
+                onMouseDown={(event) => beginPaneResize(event, "html", "css")}
+              />
+              <div
+                className={`code-pane-shell ${collapsedPanes.css ? "collapsed" : ""}`}
+                data-pane-key="css"
+                style={collapsedPanes.css ? undefined : { flex: `${paneRatios.css} 1 0` }}
+              >
+                <CodePane
+                  title="CSS"
+                  tone="css"
+                  language="css"
+                  value={draft.css}
+                  onChange={(css) => patchDraft({ css })}
+                  collapsed={collapsedPanes.css}
+                  onToggleCollapsed={() => togglePaneCollapsed("css")}
+                />
+              </div>
+              <div
+                className="pane-divider"
+                role="separator"
+                aria-orientation="vertical"
+                onMouseDown={(event) => beginPaneResize(event, "css", "js")}
+              />
+              <div
+                className={`code-pane-shell ${collapsedPanes.js ? "collapsed" : ""}`}
+                data-pane-key="js"
+                style={collapsedPanes.js ? undefined : { flex: `${paneRatios.js} 1 0` }}
+              >
+                <CodePane
+                  title={scriptLanguage === "typescript" ? "TS" : "JS"}
+                  tone={scriptLanguage === "typescript" ? "ts" : "js"}
+                  language={scriptLanguage}
+                  footerLabel={scriptLanguage === "typescript" ? "TypeScript" : "JavaScript"}
+                  value={draft.js}
+                  onChange={(js) => patchDraft({ js })}
+                  languageOptions={[
+                    { label: "JS", value: "javascript" },
+                    { label: "TS", value: "typescript" }
+                  ]}
+                  onLanguageChange={(language) => handleScriptLanguageChange(language as ScriptLanguage)}
+                  collapsed={collapsedPanes.js}
+                  onToggleCollapsed={() => togglePaneCollapsed("js")}
+                />
+              </div>
+            </div>
             <section className="preview-pane">
               <div className="preview-toolbar">
                 <div className="pane-title-text">Preview</div>
@@ -765,7 +905,9 @@ function CodePane({
   value,
   onChange,
   languageOptions,
-  onLanguageChange
+  onLanguageChange,
+  collapsed,
+  onToggleCollapsed
 }: {
   title: string;
   tone: "html" | "css" | "js" | "ts";
@@ -775,8 +917,28 @@ function CodePane({
   onChange: (value: string) => void;
   languageOptions?: Array<{ label: string; value: string }>;
   onLanguageChange?: (value: string) => void;
+  collapsed?: boolean;
+  onToggleCollapsed?: () => void;
 }) {
   const badgeText = title.length > 2 ? title.slice(0, 2) : title;
+
+  if (collapsed) {
+    return (
+      <section className={`code-pane collapsed ${tone}`}>
+        <button
+          className="pane-rail"
+          type="button"
+          onClick={onToggleCollapsed}
+          title={`Expand ${title}`}
+          aria-label={`Expand ${title} pane`}
+          aria-expanded={false}
+        >
+          <span className={`language-badge ${tone}`}>{badgeText}</span>
+          <span className="pane-rail-label">{title}</span>
+        </button>
+      </section>
+    );
+  }
 
   return (
     <section className="code-pane">
@@ -797,6 +959,18 @@ function CodePane({
           <span className="pane-title-text">{title}</span>
         )}
         <span className="toolbar-spacer" />
+        {onToggleCollapsed && (
+          <button
+            className="plain-icon"
+            type="button"
+            onClick={onToggleCollapsed}
+            title={`Collapse ${title}`}
+            aria-label={`Collapse ${title} pane`}
+            aria-expanded={true}
+          >
+            <ChevronsLeft size={14} />
+          </button>
+        )}
         <Settings size={14} />
       </div>
       <Editor

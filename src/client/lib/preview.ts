@@ -1,5 +1,14 @@
 import type { Pen } from "./types";
 
+export function getPreviewFrameKey(preview: string, nonce = 0): string {
+  let hash = 0;
+  for (let index = 0; index < preview.length; index += 1) {
+    hash = (hash * 31 + preview.charCodeAt(index)) | 0;
+  }
+
+  return `${nonce}:${preview.length}:${hash}`;
+}
+
 export function buildPreviewDocument(pen: Pick<Pen, "html" | "css">, script: string): string {
   return `<!doctype html>
 <html>
